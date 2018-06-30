@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+body{
+	margin: 0;
+	height: auto;
+	font-family: 'Work Sans', sans-serif;
+	background: #f1f1f1;
+}
+#main{
+	max-width: 900px;
+	margin: auto;
+	background: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	margin-top: 6%;
+	border: 0px solid transparent;
+	border-radius: 13px;
+	height: auto;
+
+
+}
+h1{
+	text-align: center;
+	margin: auto;
+}
+h2{
+	font-weight: 400;
+	font-size: 2rem;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 5% 0 1% 0;
+	text-align: center;
+	color: #f16334
+}
+h4{
+	text-transform: capitalize;
+	margin: 0;
+	font-size: 1.2rem;
+	font-weight: 400;
+	padding-bottom: 2%;
+	text-align: center;
+	color: #595959;
+}
+#formBox{
+	margin: 0;
+	font-size: 1.2rem;
+	font-weight: 400;
+	text-align: center;
+	padding-bottom: 40px;
+}
+input{
+	color: #f16334;
+	padding: 4px 2px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 14px;
+	border-radius: 6px;
+}
+
+input:focus {
+  border-radius: 5px;
+  outline: none;
+}
+select{
+	color: #ffffff;
+	background: #006400;
+	width: auto;
+	padding: 8px 2px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 14px;
+	border-radius: 12px;
+	width: 180px;
+}
+footer{
+	color: #ffffff;
+	padding: 12px;
+	height: auto;
+	margin: 40px auto auto auto;
+	background: #f16334;
+	text-align: center;
+}
+footer .social-links a{
+	text-decoration: none;
+}
+

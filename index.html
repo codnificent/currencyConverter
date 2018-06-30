@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible"content = "ie=edge">
+	<meta name="theme-color" content="#f1f1f1"/>
+	<title>Currency Converter PWA</title>
+	<link rel="manifest" href="manifest.json">
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+	<main>
+		<h1>An app that helps you convert currencies from one country to another</h1>
+	<div id="main">
+		<div id="innerHeading">
+			<h2>Currency Converter </h1>
+		</div>
+			<h4>Specify the currencies you want to convert from/to...</h4>
+		<div id="converterBox">
+			<div id="formBox">
+				<form method="GET">
+					<label for="userInput">Currency value:</label>
+                    <input type= "text" id="value" name= "userInput" placeholder="currency value here..">
+                    <br>
+					<label for="from">From:</label>
+					<select name = "from" id="from">
+						<!--The value here is got from the js file-->
+					</select>
+
+					<label for="to">To:</label>
+					<select name = "to" id="to">
+						<!--The value here is also got from the js file-->
+					</select>
+					<br>
+					<p>Click on <b>Convert!</b> button to get the result😊</p>
+					<br>
+					<div class="buttonDiv">
+                      <input type="button" value="Convert!" id="button" onclick = "buttonClick()">
+                      <br>
+                      <br>
+                      <label for="result">=</label>
+                      <input type="text" id="result" name="result" placeholder="result here..">
+                    </div>
+				</form>
+			</div>
+			
+		</div>
+
+	</div>
+	</main>
+	<footer>
+		<div class="social-links">
+			<p>Powered by:</p>
+			<a href="https://www.currencyconverterapi.com/"><strong>currencyconverterapi.com</strong></a>
+		</div>
+		<p>Copyright &copyKingsley 2018</p>
+	</footer>
+	<script src="idb.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
