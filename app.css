@@ -6,14 +6,14 @@ body{
 	background: #f1f1f1;
 }
 #main{
-	max-width: 900px;
-	margin: auto;
+	margin: auto 6px auto 6px;
 	background: #fff;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 	margin-top: 6%;
 	border: 0px solid transparent;
-	border-radius: 13px;
+	border-radius: 12px;
 	height: auto;
+	padding 6px;
 
 
 }
@@ -69,8 +69,8 @@ select{
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 14px;
-	border-radius: 12px;
-	width: 180px;
+	border-radius: 6px;
+	width: 100%;
 }
 footer{
 	color: #ffffff;
@@ -79,4 +79,19 @@ footer{
 	margin: 40px auto auto auto;
 	background: #f16334;
 	text-align: center;
+}
+footer .social-links a{
+	color: #fff;
+}
+/*Screen size of 600px and ab0ve */
+@media screen and (min-width: 6000x){
+	#main{
+		max-width: 800px;
+		margin: auto;
+		margin-top 60px;
+	}
+	select{
+		width: 50%;
+		margin: 6px;
+	}
 }
