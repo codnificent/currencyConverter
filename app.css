@@ -83,15 +83,15 @@ footer{
 footer .social-links a{
 	color: #fff;
 }
-/*Screen size of 600px and ab0ve */
-@media screen and (min-width: 6000x){
+/*Screen size of 600px and bove*/
+@media screen and (min-width: 600px) {
 	#main{
-		max-width: 800px;
-		margin: auto;
-		margin-top 60px;
+	    max-width: 800px;
+	    margin: auto;
+	    margin-top: 60px; 
 	}
 	select{
-		width: 50%;
-		margin: 6px;
-	}
+	    width: 50%;
+	    margin: 6px;
+    }
 }
