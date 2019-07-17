@@ -1,5 +1,5 @@
 const apiURL = `https://free.currconv.com/api/v7/countries`;
-fetch(apiURL, {mode: 'no-cors' // 'cors' by default}).then((response) => {
+fetch(apiURL, {mode: 'no-cors'}).then((response) => {
  return response.json().then((responseValue) => {//Get the JSON data
   return responseValue.results
   	
