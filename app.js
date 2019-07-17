@@ -1,4 +1,4 @@
-const apiURL = `https://free.currencyconverterapi.com/api/v5/countries`;
+const apiURL = `https://free.currconv.com/api/v7/countries`;
 fetch(apiURL).then((response) => {
  return response.json().then((responseValue) => {//Get the JSON data
   return responseValue.results
