@@ -1,9 +1,7 @@
 const apiURL = `https://free.currconv.com/api/v7/countries`;
 fetch(apiURL, {mode: 'no-cors'}).then((response) => {
- return response.json().then((responseValue) => {//Get the JSON data
-  return responseValue.results
-  	
- }).then((value) =>{
+ return response.json().then((responseValue) => {
+  return responseValue.results}).then((value) => {
   for(let data in value){
   	//Looping through the data and getting the currencyId  and 
   	//currencyName into the field for 'From' in the select tag
