@@ -32,7 +32,7 @@ function buttonClick() {
   console.log(query);
   let userInput = document.getElementById("value").value;
   let resultValue = document.getElementById('result');
-  let url = `https://free.currconv.com/api/v7/convert?q={query}&compact=ultra&apiKey=f26aadd68b816a4954c8`;         
+  let url = `https://free.currconv.com/api/v7/convert?q={query}&compact=ultra&apiKey=f26aadd68b816a4954c8`; 
 
   if (!('indexedDB' in window)) {
     console.log('This browser doesn\'t support IndexedDB');
