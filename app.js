@@ -28,24 +28,26 @@ function buttonClick() {
   //Function for geting the conversion when a user clicks a button
   let fromCurrency = from.value;
   let toCurrency = to.value;
-  let query = fromCurrency + '_' + toCurrency;
   let userInput = document.getElementById("value").value;
   let resultValue = document.getElementById('result');
-  let url = `https://free.currconv.com/api/v7/convert?q={query}&compact=ultra&apiKey=f26aadd68b816a4954c8`; 
-
+  let query = fromCurrency + '_' + toCurrency;
+  let apiKey = 'f26aadd68b816a4954c8';
+  let url = 'https://free.currconv.com/api/v7/convert?q='
+            + query + '&compact=ultra&apiKey=' + apiKey;
+  
   if (!('indexedDB' in window)) {
     console.log('This browser doesn\'t support IndexedDB');
     return;
   }
   let dbPromise = idb.open('converter-db', 1, (upgradeDb) =>{
-  // If the browser doesn't support service worker,
-  // There's no need having a database
-  if (!navigator.serviceWorker) {
-    return Promise.resolve();
-  };
-  if(!upgradeDb.objectStoreNames.contains('db-data')){
-    let dbData = upgradeDb.createObjectStore('db-data',  {autoIncrement: true});
-  }
+    // If the browser doesn't support service worker,
+    // There's no need having a database
+    if (!navigator.serviceWorker) {
+      return Promise.resolve();
+    };
+    if(!upgradeDb.objectStoreNames.contains('db-data')){
+      let dbData = upgradeDb.createObjectStore('db-data',  {autoIncrement: true});
+    }
   });
 
   fetch(url).then((response) =>{
