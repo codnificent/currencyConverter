@@ -1,4 +1,4 @@
-const apiURL = `https://free.currconv.com/api/v7/countries?apiKey=f26aadd68b816a4954c8`;
+const apiURL = `https://free.currconv.com/api/v7/currencies?apiKey=f26aadd68b816a4954c8`;
 fetch(apiURL).then((response) => {
  return response.json().then((responseValue) => {
   return responseValue.results}).then((value) => {
@@ -31,8 +31,7 @@ function buttonClick() {
   let query = fromCurrency + '_' + toCurrency;
   let userInput = document.getElementById("value").value;
   let resultValue = document.getElementById('result');
-  let url = `https://free.currconv.com/api/v7/convert?q={query}&compact=ultra&apiKey=f26aadd68b816a4954c8`;
-             
+  let url = `https://free.currconv.com/api/v7/convert?q={query}&compact=ultra&apiKey=f26aadd68b816a4954c8`;         
 
   if (!('indexedDB' in window)) {
     console.log('This browser doesn\'t support IndexedDB');
